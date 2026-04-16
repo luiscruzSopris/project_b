@@ -22,6 +22,12 @@ def main() -> None:
     print(greet("Git"))
     print(f"2 + 3 = {add(2, 3)}")
 
+def divide(a: float, b: float) -> float:
+    """Return the quotient of two numbers. Raises ValueError on division by zero."""
+    if b == 0:
+        raise ValueError("Cannot divide by zero.")
+    return a / b
+
 
 if __name__ == "__main__":
     main()
