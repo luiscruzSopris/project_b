@@ -22,6 +22,7 @@ def main() -> None:
     print(greet("Git"))
     print(f"2 + 3 = {add(2, 3)}")
 
+
 def divide(a: float, b: float) -> float:
     """Return the quotient of two numbers. Raises ValueError on division by zero."""
     if b == 0:
@@ -36,6 +37,15 @@ def factorial(n: int) -> int:
     for i in range(2, n + 1):
         result *= i
     return result
+
+def subtract(a: float, b: float) -> float:
+    """Return the difference of two numbers."""
+    return a - b
+
+
+def multiply(a: float, b: float) -> float:
+    """Return the product of two numbers."""
+    return a * b
 
 if __name__ == "__main__":
     main()
